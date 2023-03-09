@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   pipex.c                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: gcollet <gcollet@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/02 09:54:02 by gcollet           #+#    #+#             */
-/*   Updated: 2022/02/06 13:47:21 by gcollet          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../includes/pipex.h"
 
 /* Child process that run inside a fork, take the filein, put the output inside
@@ -43,7 +31,7 @@ void	parent_process(char **argv, char **envp, int *fd)
 }
 
 /* Main function that run the child and parent process or display an error
- message if arguments are wrong */
+ message if arguments are wrong */ 
 int	main(int argc, char **argv, char **envp)
 {
 	int		fd[2];
